@@ -15,9 +15,15 @@
 	<body>
         <div id="wrapper">
             <div id="komplimang">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus eleifend ullamcorper. Maecenas eget dolor urna.
+				<div id="komplimangen">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus eleifend ullamcorper. Maecenas eget dolor urna.
+				</div>
 				<div id="links">
-				
+					Utvecklad av 
+					<a href="#">Alfons Wallin</a>
+					<a href="https://github.com/Snegil/DagensKomplimang" target="_blank">
+					<img id="img" src="Images/GitHub-Mark.png" alt="Github">
+					</a>
 				</div>
 			</div>
         </div>

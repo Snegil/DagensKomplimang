@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(270deg, rgb(69, 105, 65), rgb(99, 40, 41), rgb(97, 97, 119));
+    background: linear-gradient(270deg, rgba(100, 255, 100, 0.3), rgba(100, 154, 106, 0.50));
     background-size: 300% 300%;
     
-    -webkit-animation: GradientBackground 120s ease infinite;
-	-moz-animation: GradientBackground 120s ease infinite;
-	-o-animation: GradientBackground 120s ease infinite;
-	animation: GradientBackground 120s ease infinite;
+    -webkit-animation: gradientbackground 90s ease infinite;
+	-moz-animation: gradientbackground 90s ease infinite;
+	-o-animation: gradientbackground 90s ease infinite;
+	animation: gradientbackground 90s ease infinite;
 }
 
 #wrapper {
@@ -17,7 +17,13 @@ body {
 #wrapper div {
 }
 #wrapper #komplimang {
-    background-color: #fff;
+    background-color: rgba(155, 155, 155, 0.20);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #557658;
+    
+    padding: 30px 25px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 20;
@@ -26,28 +32,42 @@ body {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+/*
+    -webkit-box-shadow: 0px 0px 50px 61px rgb(204, 204, 204);
+    -moz-box-shadow: 0px 0px 50px 61px rgb(204, 204, 204);
+    box-shadow: 0px 0px 50px 61px rgb(204, 204, 204); */
+}
 
-    -webkit-box-shadow: 0px 0px 50px 61px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 50px 61px rgba(255,255,255,1);
-    box-shadow: 0px 0px 50px 61px rgba(255,255,255,1);
+@media only screen and (max-width: 700px) {
+    #wrapper #komplimang {
+        font-size: 25px;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 10;
+        grid-row-end: 40;
+
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
 }
 /* Start of animation for the animated gradient background */
-@-webkit-keyframes gradientBackground {
+@-webkit-keyframes gradientbackground {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes gradientBackground {
+@-moz-keyframes gradientbackground {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-o-keyframes gradientBackground {
+@-o-keyframes gradientbackground {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes gradientBackground {
+@keyframes gradientbackground {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}

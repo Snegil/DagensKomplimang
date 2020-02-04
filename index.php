@@ -12,10 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 	</head>
 	<body>
-        <div id="Wrapper">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <div id="wrapper">
+            <div id="komplimang">1</div>
         </div>
 	</body>
 </html>

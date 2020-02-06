@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="author" content="Snegil">
+		<meta name="author" content="Alfons Wallin">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8" lang="sv">
 		<title>

@@ -13,19 +13,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
 
 		<?php 
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$dbname = "dagenskomplimang";			
-			// Create connection
-			$conn = new mysqli($servername, $username, $password, $dbname);		
-			// Check connection
-			if ($conn->connect_error) 
-			{
+		include 'login.php';
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);		
+		// Check connection
+    		if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
-			}
-			mysqli_set_charset($conn,"utf8");
-			echo "Connected successfully";
+        	}
+		mysqli_set_charset($conn,"utf8");
+		echo "Connected successfully";
 		?>
 
 	</head>
@@ -33,8 +29,7 @@
         <div id="wrapper">
             <div id="komplimang">
 				<div id="komplimangen">
-					<?php
-						
+					<?php	
 						$result = mysqli_query($conn, "SELECT * FROM komplimanger WHERE id='2'");
 						$row = mysqli_fetch_array($result);
 						echo $row['komplimang'];
